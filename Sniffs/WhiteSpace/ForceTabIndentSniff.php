@@ -4,9 +4,9 @@ class Cake_Sniffs_WhiteSpace_ForceTabIndentSniff extends Generic_Sniffs_WhiteSpa
 
     /**
      * Processes this test, when one of its tokens is encountered.
-	 * 
-	 * Check for any line starting with 2 spaces - which would indicate space indenting
-	 * Also check for "\t " - a tab followed by a space, which is a common similar mistake
+     * 
+     * Check for any line starting with 2 spaces - which would indicate space indenting
+     * Also check for "\t " - a tab followed by a space, which is a common similar mistake
      *
      * @param PHP_CodeSniffer_File $phpcsFile All the tokens found in the document.
      * @param int                  $stackPtr  The position of the current token in
@@ -26,7 +26,7 @@ class Cake_Sniffs_WhiteSpace_ForceTabIndentSniff extends Generic_Sniffs_WhiteSpa
         if (preg_match('@^  @', $tokens[$stackPtr]['content'])) {
             $error = 'Space indented: Tabs for indents, spaces for alignment';
             $phpcsFile->addError($error, $stackPtr);
-		} elseif (preg_match('@\t [^\*]@', $tokens[$stackPtr]['content'])) {
+        } elseif (preg_match('@\t [^\*]@', $tokens[$stackPtr]['content'])) {
             $error = 'Tab followed by space - bad indentation';
             $phpcsFile->addWarning($error, $stackPtr);
         }

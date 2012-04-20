@@ -10,7 +10,7 @@ Obviously, you need [PHP CodeSniffer](http://pear.php.net/package/PHP_CodeSniffe
 Locate the `CodeSniffer/Standards` folder in your CodeSniffer install, and install this repository with the name "Cake" e.g.:
 
 	cd /usr/share/pear/PHP/CodeSniffer/Standards/
-	git clone git://github.com/AD7six/cakephp-codesniffs.git Cake
+	git clone git://github.com/Wolg/cakephp-codesniffs.git Cake
 
 If you work mainly with CakePHP, or your work simply follows the same coding standards, you may wish to configure PHP Code Sniffer to use this standard by default:
 
@@ -29,3 +29,4 @@ To run `phpcs` checks each time you commit a file, you can use the pre-commit ho
 * [http://lifeisbetter.in/blog/2010/08/09/yet-another-version-of-php-codesniffer-for-cakephp](http://lifeisbetter.in/blog/2010/08/09/yet-another-version-of-php-codesniffer-for-cakephp)
 * [https://github.com/venkatrs/Cake_PHP_CodeSniffer](https://github.com/venkatrs/Cake_PHP_CodeSniffer)
 * [http://www.sanisoft.com/downloads/cakephp_sniffs](http://www.sanisoft.com/downloads/cakephp_sniffs)
+* [https://github.com/AD7six/cakephp-codesniffs](https://github.com/AD7six/cakephp-codesniffs)

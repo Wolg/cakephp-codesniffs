@@ -26,14 +26,6 @@
   </properties>
  </rule>
 
- <!-- Number of TABS code should be indented, don't indent doc blocks -->
- <rule ref="Cake.WhiteSpace.ScopeIndent">
-  <properties>
-   <property name="indent" value="1"/>
-   <property name="exact" value="1"/>
-  </properties>
- </rule>
-
  <!-- warn on 3 level deep nesting, error on 5 -->
  <rule ref="Generic.Metrics.NestingLevel">
   <properties>
